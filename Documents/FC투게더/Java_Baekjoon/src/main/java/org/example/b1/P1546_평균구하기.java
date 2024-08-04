@@ -12,8 +12,8 @@ public class P1546_평균구하기 {
 
         for (int i = 0; i < N; i++) {
             int temp = sc.nextInt();
-            if(temp > max) max = temp; // 최대 점수 계산
-            sum = sum + temp; // 합계 계산
+            if(temp>max) max = temp;
+            sum = sum + temp;
         }
 
         // 평균 계산 후 출력
