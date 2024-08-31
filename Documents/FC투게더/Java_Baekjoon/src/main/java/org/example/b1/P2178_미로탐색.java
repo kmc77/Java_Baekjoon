@@ -38,12 +38,12 @@ public class P2178_미로탐색 {
     private static void BFS(int i, int j) {
         Queue<int[]> queue = new LinkedList<>();
         queue.offer(new int[]{i, j});
+        visited[i][j] = true;
         while (!queue.isEmpty()) {
             int now[] = queue.poll();
-            visited[i][j] = true;
             for (int k = 0; k < 4; k++) {
                 int x = now[0] + dx[k];
-                int y = now[1] + dx[k];
+                int y = now[1] + dy[k];
                 if (x >= 0 && y >= 0 && x < N && y < M) {
                     if (A[x][y] != 0 && !visited[x][y]) {
                         visited[x][y] = true;
