@@ -51,7 +51,6 @@ public class P2178_미로탐색 {
                         queue.add(new int[]{x, y});
                     }
                 }
-
             }
         }
     }
