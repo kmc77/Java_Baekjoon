@@ -36,7 +36,7 @@ public class P1707_이분그래프 {
             //모든 노드에서 DFS 실행 해야됨
             for (int i = 1; i <= V; i++) {
                 if (IsEven) {
-                    DFS(1);
+                    DFS(i);
                 } else {
                     break;
                 }
